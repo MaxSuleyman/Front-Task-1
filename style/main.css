@@ -1,0 +1,9 @@
+@import "../blocks/header/header.css";
+@import "../blocks/first_screen/first_sreen.css";
+@font-face {
+    font-family: "PT sans";
+    src: url("/style/fonts/PTSans-Bold.ttf");
+    src: url("/style/fonts/PTSans-BoldItalic.ttf");
+    src: url("/style/fonts/PTSans-Italic.ttf");
+    src: url("/style/fonts/PTSans-Regular.ttf");
+}

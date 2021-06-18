@@ -1,0 +1,93 @@
+
+/*======================================= блок верхнего меню навигации ===============================================*/
+.nav-top {
+    background: #F4F4F4;
+}
+
+.nav-top__menu__left {
+    margin: auto;
+    flex-grow: 1;
+    display: flex;
+    max-width: 40%;
+    text-align: left;
+}
+
+.nav-top__menu__right {
+    flex-grow: 1;
+    margin: auto;
+    display: flex;
+}
+
+.nav-top__menu {
+    flex-direction: row;
+    display: flex;
+    height: 56px;
+    font-size: 14px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align-all: left;
+}
+
+.nav-top__help{
+    color: #178A00;
+    font-style: normal;
+    margin: auto;
+    text-decoration: none;
+}
+
+.nav-top__link {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    color: #6F6F6F;
+    margin: auto;
+    align-content: center;
+}
+
+.nav-top__search{
+    margin: auto;
+}
+
+.nav-top__search__ico {
+    width: 16px;
+    height: 16px;
+    margin: auto;
+}
+
+.nav-top__lang {
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    color: #F76201;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+}
+
+.nav-top__lang__ico {
+    padding-left: 5px;
+    margin: auto;
+    width: 12px;
+    height: 6px;
+    text-align: center;
+}
+
+
+.nav-top__massage {
+    width: 16px;
+    height: 11px;
+}
+
+.nav-top__search {
+    display: flex;
+    border: 1px solid #B6B6B6;
+    border-radius: 45px;
+    height: 32px;
+    width: 199px;
+}
+
+.nav-top input {
+    border: none;
+    background: #F4F4F4;
+    margin: auto;
+}
