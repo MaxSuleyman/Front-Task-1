@@ -6,72 +6,100 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 <header class="header">
     <!-- на старую версию сайта -->
     <div class="come-back">
-        <!-- ссылка на старую версию сайта -->
-        <div class="come-back__link">
-            <a href="#">На прежнюю версию сайта</a>
-        </div>
+        <div class="container come-back__container">
+            <!-- ссылка на старую версию сайта -->
+            <div class="come-back__box">
+                <a class="come-back__link" href="#">
+                    На прежнюю версию сайта
+                    <svg viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="come-back__link-ico">
+                        <path d="M1 7L4 4L1 1" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
 
-        <!-- кнопка закрыть -->
-        <div class="come-back__close">
-            <a href="" class="come-back__close__link">
-                <div>
-                    Закрыть
-                </div>
-                <img src="blocks/header/high_menu/high_menu_images/close.png" alt="" class="come-back_close_ico">
-            </a>
+            <!-- кнопка закрыть -->
+            <div class="come-back__box come-back__box--right-text">
+                <a href="" class="come-back__link">
+                    <div class="come-back__close-text">
+                        Закрыть
+                    </div>
+                    <svg class="come-back__close-ico" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.6001 0.600098L0.600098 6.6001" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M0.600098 0.600098L6.6001 6.6001" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- блок верхней навигации -->
     <div class="nav-top">
-        <nav class="nav-top__menu">
-            <div class="nav-top__menu__left">
-                <a href="" class="nav-top__link">
-                    О нас
-                    <img src="blocks/header/lower_menu/lower_menu_images/img.png" alt="">
-                </a>
-                <a href="" class="nav-top__link">Отзывы</a>
-                <a href="" class="nav-top__link">FAQ</a>
-                <a href="" class="nav-top__help"> Тех.поддержка</a>
-            </div>
+        <div class="container">
+            <nav class="nav-top__menu">
+                <div class="nav-top__menu--left">
+                    <a href="" class="nav-top__link">
+                        О нас
+                        <svg class="nav-top__link--ico" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 0.5L5 4.5L9 0.5" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
 
-            <div class="nav-top__menu__right">
-                <a href="" class="nav-top__link">
-                    <img src="blocks/header/lower_menu/lower_menu_images/download.png" alt="" class="nav-top__download_ico">
-                    ПО для доступа в 1С
-                </a>
-
-                <a href="" class="nav-top__link">
-                    <img src="blocks/header/lower_menu/lower_menu_images/massage_ico.png" alt="" class="nav-top__massage">
-                    Письмо директору
-                </a>
-
-                <div class="nav-top__search">
-                    <input type="text" placeholder="Поиск">
-                    <img src="blocks/header/lower_menu/lower_menu_images/search.png" alt="" class="nav-top__search__ico">
+                    </a>
+                    <a href="" class="nav-top__link">Отзывы</a>
+                    <a href="" class="nav-top__link nav-top__link--FAQ">FAQ</a>
+                    <a href="" class="nav-top__help"> Тех.поддержка</a>
                 </div>
 
-                <a href="" class="nav-top__lang">
-                    <div>
-                        RUS
-                    </div>
-                    <img src="blocks/header/lower_menu/lower_menu_images/lang.png" alt="" class="nav-top__lang__ico">
-                </a>
-            </div>
+                <div class="nav-top__menu--right">
+                    <a href="" class="nav-top__link nav-top__link--download">
+                        <svg class="nav-top__download-ico" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 10.7085L15 13.8196C15 14.2322 14.8361 14.6278 14.5444 14.9196C14.2527 15.2113 13.857 15.3752 13.4444 15.3752L2.55556 15.3752C2.143 15.3752 1.74733 15.2113 1.45561 14.9195C1.16389 14.6278 1 14.2322 1 13.8196L1 10.7085" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.11187 6.81934L8.00076 10.7082L11.8896 6.81934" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 10.7083L8 1.375" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
 
-        </nav>
+                        ПО для доступа в 1С
+                    </a>
+
+                    <a href="" class="nav-top__link nav-top__link--massage">
+                        <svg class="nav-top__massage" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.6 1H15.4C16.28 1 17 1.61875 17 2.375V10.625C17 11.3813 16.28 12 15.4 12H2.6C1.72 12 1 11.3813 1 10.625V2.375C1 1.61875 1.72 1 2.6 1Z" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.5 1.5415L9 7.49984L1.5 1.5415" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Письмо директору
+                    </a>
+
+                    <div class="nav-top__search">
+                        <input type="text" placeholder="Поиск">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 13C10.5376 13 13 10.5376 13 7.5C13 4.46243 10.5376 2 7.5 2C4.46243 2 2 4.46243 2 7.5C2 10.5376 4.46243 13 7.5 13Z" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.6343 15L11.6343 12" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+
+                    <a href="" class="nav-top__lang">RUS
+                        <svg class="nav-top__lang__ico" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="#F76201" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </nav>
+        </div>
     </div>
 
     <nav class="nav-main">
         <div class="nav-main__left">
             <div class="nav-main__left__logo">
-                <img src="blocks/header/midle_menu/midle_menu_images/logo.png" alt="">
+                <img src="style/blocks/header/nav-top/nav-top_images/logo.png" alt="">
             </div>
 
             <div>
@@ -80,7 +108,7 @@
             <div class="nav-main__check-down">
                 <a href="">
                     Решения
-                    <img src="blocks/header/midle_menu/midle_menu_images/img_4.png" alt="">
+                    <img src="style/blocks/header/nav-top/nav-top_images/img_4.png" alt="">
                 </a>
             </div>
 
@@ -97,7 +125,7 @@
                     <div>
                         База знаний
                     </div>
-                    <img src="blocks/header/midle_menu/midle_menu_images/img_5.png" alt="">
+                    <img src="style/blocks/header/nav-top/nav-top_images/img_5.png" alt="">
                 </a>
             </div>
 
@@ -106,7 +134,7 @@
         <div class="nav-main__right">
             <div class="nav_main__login">
                 <a href="#" class="nav-main__login__link">
-                    <img src="blocks/header/midle_menu/midle_menu_images/login.png" alt="" class="nav-main__login__ico">
+                    <img src="style/blocks/header/nav-top/nav-top_images/login.png" alt="" class="nav-main__login__ico">
                     <div>
                         Вход
                     </div>
@@ -154,14 +182,14 @@
             <a href="" class="article-left__buttons__right-button">
                 <div>
                     Получить консультацию
-                    <img src="blocks/first_screen/first_screen_images/orange_vector.png" alt="">
+                    <img src="style/blocks/first_screen/first_screen_images/orange_vector.png" alt="">
                 </div>
             </a>
         </div>
     </div>
 
     <div class="article-right">
-        <img src="blocks/first_screen/first_screen_images/main_image.png" alt="" class="article-right__image">
+        <img src="style/blocks/first_screen/first_screen_images/main_image.png" alt="" class="article-right__image">
     </div>
 </article>
 

@@ -1,0 +1,45 @@
+.come-back {
+    padding: 10px 0;
+    color: #6F6F6F;
+    padding-bottom: 4px;
+}
+
+.come-back__container {
+    display: flex;
+    align-items: center;
+}
+
+.come-back__box {
+    flex: 1;
+}
+
+.come-back__link {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.come-back__link-ico {
+    width: 6px;
+    height: 10px;
+    margin-left: 4px;
+}
+
+.come-back__close-ico {
+    width: 7px;
+    height: 7px;
+    margin-left: 7px;
+}
+
+.come-back__box--right-text {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+
+.come-back__close-text {
+    font-size: 14px;
+}
+

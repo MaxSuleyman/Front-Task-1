@@ -2,37 +2,46 @@
 /*======================================= блок верхнего меню навигации ===============================================*/
 .nav-top {
     background: #F4F4F4;
+    display: flex;
+    flex: 1;
 }
 
-.nav-top__menu__left {
-    margin: auto;
-    flex-grow: 1;
+.nav-top__menu--left {
     display: flex;
+    flex-grow: 1;
+    align-items: center;
     max-width: 40%;
-    text-align: left;
 }
 
-.nav-top__menu__right {
-    flex-grow: 1;
-    margin: auto;
+.nav-top__menu--right {
+    text-align: right;
+    align-items: center;
     display: flex;
+    align-content: center;
+    margin-left: 45px;
 }
 
 .nav-top__menu {
-    flex-direction: row;
     display: flex;
-    height: 56px;
+    padding-top: 15px;
+    padding-bottom: 16px;
     font-size: 14px;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align-all: left;
+}
+
+.nav-top__link--ico {
+    width: 12px;
+    height: 8px;
+}
+
+.nav-top__download-ico {
+    width: 14px;
+    height: 14px;
 }
 
 .nav-top__help{
     color: #178A00;
     font-style: normal;
-    margin: auto;
-    text-decoration: none;
+    margin-left: 10px;
 }
 
 .nav-top__link {
@@ -40,18 +49,31 @@
     font-style: normal;
     font-size: 14px;
     color: #6F6F6F;
-    margin: auto;
+    margin-right: 25px;
     align-content: center;
 }
 
-.nav-top__search{
-    margin: auto;
+.nav-top__link--FAQ {
+    margin-left: 18px;
+}
+
+.nav-top__link:last-child {
+    margin-right: 0;
+}
+
+.nav-top__link--download {
+    margin-right: 35px;
+}
+
+.nav-top__link--massage {
+    margin-left: 14px;
+    padding-right: 16px;
 }
 
 .nav-top__search__ico {
     width: 16px;
     height: 16px;
-    margin: auto;
+    align-items: center;
 }
 
 .nav-top__lang {
@@ -61,17 +83,17 @@
     color: #F76201;
     text-decoration: none;
     text-align: center;
-    margin: auto;
+    align-items: center;
+    margin-left: 34px;
 }
 
 .nav-top__lang__ico {
     padding-left: 5px;
-    margin: auto;
-    width: 12px;
-    height: 6px;
+    width: 14px;
+    height: 8px;
     text-align: center;
+    align-items: center;
 }
-
 
 .nav-top__massage {
     width: 16px;
@@ -79,15 +101,25 @@
 }
 
 .nav-top__search {
+    flex-direction: row;
+    align-items: center;
     display: flex;
+    padding: 7px 6px;
     border: 1px solid #B6B6B6;
     border-radius: 45px;
-    height: 32px;
-    width: 199px;
+
+}
+
+.nav-top__search__ico {
+    width: 16px;
+    height: 16px;
+    max-width: 5%;
 }
 
 .nav-top input {
+    margin-left: 6px;
+    margin-right: 20px;
     border: none;
     background: #F4F4F4;
-    margin: auto;
+    max-width: 95%;
 }

@@ -6,7 +6,7 @@
     display: flex;
     flex: 1;
     flex-direction: row;
-
+    font-family: 'PT Sans', sans-serif;
 }
 .nav-main__right a {
     margin: auto;

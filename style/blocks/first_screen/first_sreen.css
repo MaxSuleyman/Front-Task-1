@@ -4,6 +4,7 @@
     margin-right: 20%;
     margin-left: 20%;
     margin-top: 3%;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .article-left {
@@ -16,7 +17,6 @@
 
 .article-left__first-text {
     flex-grow: 1;
-    font-family: PT Sans Caption;
     width: 425px;
     font-size: 36px;
     font-weight: 700;
