@@ -1,101 +1,90 @@
 /*======================================= блок нижнего меню навигации ===============================================*/
+.container-main {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
 .nav-main {
-    height: 80px;
-    margin-right: 20%;
-    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.nav-main__main--menu {
     display: flex;
     flex: 1;
-    flex-direction: row;
-    font-family: 'PT Sans', sans-serif;
+    align-items: center;
+    max-width: 80%;
+    width: 900px;
 }
-.nav-main__right a {
-    margin: auto;
-    text-decoration: none;
+
+.nav-main--menu--logo {
+    margin-right: 40px;
+}
+
+.nav-main__menu--link {
+    margin-right: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.nav-main__main--link {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.main--link--theme {
+    color: #178A00;
+    align-items: center;
+}
+
+.mav-main__link--vector {
+    width: 18px;
+    height: 18px;
+}
+
+.vector-two {
+    margin-left: 7px;
+    width: 12px;
+    height: 12px;
+}
+
+.nav-main__login {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-main__login--link {
+    align-items: center;
     color: #F76201;
 }
 
-.nav-main__left div{
-    margin: auto;
-}
-
-.nav-main__left a {
-    text-decoration: none;
-    color: #333333;
-}
-
-.nav-main__left {
-    float: left;
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    flex-grow: 1;
-    width: 70%;
-}
-
-.nav-main__check-down {
-    display: flex;
-    margin: auto;
-    align-items: center;
-}
-
-.nav-main__check-down a {
-    color: #178A00;
-    display: flex;
-    margin: auto;
-    align-items: center;
-}
-
-.nav-main__check-down img {
-    height: 20px;
-    width: 20px;
-}
-
-.nav-main__base-knowledge {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-}
-
-.nav-main__right {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    flex-grow: 1;
-}
-
-.nav_main__login {
-    padding-left: 5px;
-    font-weight: 700;
-    display: flex;
-    flex-grow: 1;
-    margin: auto;
-}
-
-.nav-main__login__link {
-    display: flex;
-    margin: auto;
-    flex: 1;
-    color: #ffffff;
+.nav-main__login--ico {
+    width: 22px;
+    height: 22px;
+    padding-top: 5px;
+    margin-top: 19px;
 }
 
 .nav-main__register {
-    font-weight: 700;
-    width: 176px;
-    font-size: 14px;
-    display: flex;
-    flex-grow: 1;
-    margin: auto;
     height: 48px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(180deg, #F76201 0%, #FF4D00 100%);
+    color: #FFFFFF;
+
     border-radius: 45px;
-    background: #F76201;
-}
-
-.nav-main__register a {
-    color: #ffffff;
-}
-
-.nav-main__login__ico {
-    width: 18px;
-    height: 18px;
-    padding-right: 5px;
+    padding: 0 45px;
+    margin-left: 30px;
+    margin-top: 19px;
 }

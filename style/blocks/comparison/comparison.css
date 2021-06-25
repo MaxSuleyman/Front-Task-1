@@ -1,0 +1,12 @@
+.comparison--container {
+    align-items: center;
+    display: flex;
+}
+
+.comparison {
+    font-family: 'PT Sans Caption', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 41px;
+    color: #333333;
+}
