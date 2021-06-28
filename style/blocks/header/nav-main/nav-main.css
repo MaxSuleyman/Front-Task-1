@@ -12,28 +12,26 @@
     flex: 1;
 }
 
+
 .nav-main__main--menu {
     display: flex;
     flex: 1;
-    align-items: center;
     max-width: 80%;
     width: 900px;
+    align-items: flex-end;
+    padding-bottom: 10px;
 }
 
 .nav-main--menu--logo {
     margin-right: 40px;
+    width: 74px;
+    height: 48px;
 }
 
-.nav-main__menu--link {
-    margin-right: 30px;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.nav-main__main--link {
-    display: flex;
-    align-items: center;
+.main-link {
     white-space: nowrap;
+    margin-right: 30px;
+    align-items: center;
 }
 
 .main--link--theme {
@@ -52,21 +50,20 @@
     height: 12px;
 }
 
-.nav-main__login {
+.login {
     text-align: right;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
     align-items: center;
     justify-content: flex-end;
 }
 
-.nav-main__login--link {
-    align-items: center;
+.login-link {
+    font-family: 'PT Sans Caption', Arial, sans-serif;
     color: #F76201;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.nav-main__login--ico {
+.login--ico {
     width: 22px;
     height: 22px;
     padding-top: 5px;
@@ -76,15 +73,15 @@
 .nav-main__register {
     height: 48px;
     font-weight: bold;
-
     display: flex;
-    align-items: center;
+    flex-direction: row;
 
     background: linear-gradient(180deg, #F76201 0%, #FF4D00 100%);
     color: #FFFFFF;
 
     border-radius: 45px;
     padding: 0 45px;
+    padding-top: 12px;
     margin-left: 30px;
     margin-top: 19px;
 }

@@ -22,7 +22,6 @@
     font-size: 36px;
     line-height: 48px;
     width: 445px;
-    height: 96px;
     font-weight: bold;
 }
 
@@ -49,18 +48,15 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-}
-
-.article__button-link {
-    display: flex;
-    white-space: nowrap;
-    width: 320px;
     margin-right: 32px;
 }
 
-.article__button--try--free {
-    width: 320px;
-    height: 48px;
+.article__button {
+    display: flex;
+    white-space: nowrap;
+}
+
+.try--free {
     font-weight: bold;
 
     align-items: center;
@@ -75,22 +71,25 @@
     text-align: left;
 }
 
-.article__button-help {
+.help {
     color: #F76201;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 18px;
+    align-items: center;
 }
 
 .article__image {
     display: flex;
     flex: 1;
     align-items: center;
+    width: 670px;
+    height: 470px;
+    margin-top: 35px;
 }
 
 .article__image--img {
-    margin-top: 35px;
-    width: 670px;
-    height: 470px;
+    max-width: 100%;
+    max-height: 100%;
 }

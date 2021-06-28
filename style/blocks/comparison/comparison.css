@@ -1,12 +1,121 @@
 .comparison--container {
     align-items: center;
-    display: flex;
 }
 
 .comparison {
+
+}
+
+.comparison__title {
+    font-size: 32px;
+    line-height: 41px;
+    font-family: 'PT Sans Caption', Arial, sans-serif;
+    color: #333333;
+}
+
+.comparison__table--box {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.comparison__table--variable {
+    margin-top: 70px;
+    width: 350px;
+    position: relative;
+    color: #999999;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.comparison__table {
+    position: relative;
+}
+
+.cloud-version-box {
+    height: 130px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    float: left;
+    margin-left: 30px;
+}
+
+.cloud-version {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 10px 10px;
+    border-top: 8px solid #178A00;
+    width: 383px;
+    height: 800px;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.version__img-box {
+    width: 73px;
+    height: 78px;
+    margin-left: 50px;
+}
+
+.cloud-version__img {
+    height: 100%;
+    width: 100%;
+}
+
+.cloud-version__text {
     font-family: 'PT Sans Caption', Arial, sans-serif;
     font-weight: bold;
-    font-size: 22px;
-    line-height: 41px;
-    color: #333333;
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 27px;
+    margin-top: 20px;
+    width: 90px;
+}
+
+.box-version {
+    background: #FFFFFF;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 10px 10px;
+    border-top: 8px solid #F76201;
+    width: 383px;
+    height: 800px;
+    float: right;
+    align-items: center;
+}
+
+.comparison__table--grid {
+    position: absolute;
+    margin-top: 170px;
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    line-height: 32px;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+
+    padding: 12px 0;
+
+}
+
+.variable-column {
+    margin-right: 100px;
+    width: 350px;
+
+    padding-left: 25px;
+}
+
+.cloud-column {
+    width: 300px;
+    margin-left: 90px;
+}
+
+.desktop-column {
+    width: 237px;
+    margin-left: 120px;
 }

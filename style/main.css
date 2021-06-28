@@ -2,3 +2,6 @@
 @import url("blocks/first_screen/first_sreen.css");
 @import url("blocks/header/header.css");
 @import "blocks/comparison/comparison.css";
+@import "blocks/try-free/try-free.css";
+@import "blocks/safety-box/safety-box.css";
+@import "blocks/tariffs/tariffs.css";

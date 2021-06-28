@@ -1,0 +1,44 @@
+.tariffs-box {
+    margin-top: 109px;
+}
+
+.tariffs-title {
+    font-family: 'PT Sans Caption', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 41px;
+}
+
+.selector {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    border: 2px solid #F4F4F4;
+    box-sizing: border-box;
+    border-radius: 39px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 20px;
+    justify-content: flex-end;
+    margin-right: 22px;
+}
+
+.button:hover {
+    background: linear-gradient(180deg, #F76201 0%, #FF4D00 100%);
+    border-radius: 39px;
+    color: #FFFFFF;
+}
+
+.button-discount {
+    background: linear-gradient(180deg, #F76201 0%, #FF4D00 100%);
+    color: #FFFFFF;
+}
+
+.button-discount:hover {
+    background: #FFFFFF;
+    color: #F76201;
+}

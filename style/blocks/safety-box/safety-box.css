@@ -1,0 +1,43 @@
+.safety-box {
+    margin-top: 100px;
+}
+
+.safety-box__title {
+    font-family: 'PT Sans Caption', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 41px;
+}
+
+.safety-box__content {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: row;
+}
+
+.safety-box__image {
+    width: 425px;
+    margin-right: 185px;
+}
+
+.image {
+
+}
+
+.icon {
+    margin-right: 20px;
+    width: 40px;
+    height: 15px;
+}
+
+.list {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item {
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 28px;
+}

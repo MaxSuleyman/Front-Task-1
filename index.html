@@ -6,8 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -45,7 +46,7 @@
     <div class="nav-top">
         <div class="container">
             <nav class="nav-top__menu">
-                <div class="nav-top__menu--left">
+                <div class="nav-top__menu nav-top__menu--left">
                     <a href="" class="nav-top__link">
                         О нас
                         <svg class="nav-top__link--ico" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +59,7 @@
                     <a href="" class="nav-top__help"> Тех.поддержка</a>
                 </div>
 
-                <div class="nav-top__menu--right">
+                <div class="nav-top__menu nav-top__menu--right">
                     <a href="" class="nav-top__link nav-top__link--download">
                         <svg class="nav-top__download-ico" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 10.7085L15 13.8196C15 14.2322 14.8361 14.6278 14.5444 14.9196C14.2527 15.2113 13.857 15.3752 13.4444 15.3752L2.55556 15.3752C2.143 15.3752 1.74733 15.2113 1.45561 14.9195C1.16389 14.6278 1 14.2322 1 13.8196L1 10.7085" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
@@ -78,11 +79,15 @@
                     </a>
 
                     <div class="nav-top__search">
-                        <input type="text" placeholder="Поиск">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 13C10.5376 13 13 10.5376 13 7.5C13 4.46243 10.5376 2 7.5 2C4.46243 2 2 4.46243 2 7.5C2 10.5376 4.46243 13 7.5 13Z" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M14.6343 15L11.6343 12" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <form action="index.html" class="nav-top__search--from">
+                            <input type="text" placeholder="Поиск">
+                            <button class="nav-top__search--button">
+                                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 13C10.5376 13 13 10.5376 13 7.5C13 4.46243 10.5376 2 7.5 2C4.46243 2 2 4.46243 2 7.5C2 10.5376 4.46243 13 7.5 13Z" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M14.6343 15L11.6343 12" stroke="#6F6F6F" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </form>
                     </div>
 
                     <a href="" class="nav-top__lang">RUS
@@ -100,7 +105,7 @@
         <nav class="nav-main">
             <div class="nav-main__main--menu">
                 <div class="nav-main--menu--logo">
-                    <svg width="75" height="48" viewBox="0 0 75 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg viewBox="0 0 75 48" fill="none"  xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1.8716 45.8497C2.43807 46.1922 3.39801 46.5768 4.3105 46.5768C5.62483 46.5768 6.25269 45.9115 6.25269 45.03C6.25269 44.1261 5.72529 43.6601 4.39143 43.1408C2.56085 42.4671 1.70975 41.4593 1.70975 40.2241C1.70975 38.5539 3.0464 37.1812 5.20067 37.1812C6.222 37.1812 7.12333 37.4619 7.65911 37.824L7.22379 39.1939C6.83033 38.9356 6.10201 38.5707 5.15882 38.5707C4.06494 38.5707 3.47893 39.2136 3.47893 39.9827C3.47893 40.8445 4.06494 41.2291 5.38206 41.7569C7.11217 42.4222 8.03304 43.3261 8.03304 44.8616C8.03304 46.7003 6.63778 47.986 4.27981 47.986C3.17756 47.986 2.15623 47.6856 1.43628 47.2589L1.8716 45.8497Z" fill="#2B2A29"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5495 47.3993C16.0751 47.6379 15.0008 48 13.6474 48C10.603 48 8.6189 45.8834 8.6189 42.7057C8.6189 39.5167 10.7425 37.1812 14.052 37.1812C15.1347 37.1812 16.0947 37.4619 16.6026 37.7426L16.1868 39.1742C15.7514 38.9356 15.065 38.6858 14.0632 38.6858C11.7471 38.6858 10.4913 40.4599 10.4913 42.6102C10.4913 45.0076 11.9982 46.4841 14.0018 46.4841C15.0427 46.4841 15.7319 46.2259 16.2565 45.9957L16.5495 47.3993Z" fill="#2B2A29"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6519 32.5493H19.4936V47.7614H17.6519V32.5493Z" fill="#2B2A29"/>
@@ -121,12 +126,12 @@
                     </svg>
                 </div>
 
-                <div class="nav-main__menu--link">
-                    <a href="" class="nav-main__main--link">Тарифы</a>
+                <div class="nav-main menu-link">
+                    <a href="" class="nav-main main-link">Тарифы</a>
                 </div>
 
-                <div class="nav-main__menu--link">
-                    <a href="" class="nav-main__main--link main--link--theme">
+                <div class="nav-main menu-link">
+                    <a href="" class="nav-main main-link main--link--theme">
                         Решения
                         <svg class="mav-main__link--vector" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 6L8 10L12 6" stroke="#178A00" stroke-linecap="round" stroke-linejoin="round"/>
@@ -134,16 +139,16 @@
                     </a>
                 </div>
 
-                <div class="nav-main__menu--link">
-                    <a href="" class="nav-main__main--link">Аренда серверов</a>
+                <div class="nav-main menu-link">
+                    <a href="" class="nav-main main-link">Аренда серверов</a>
                 </div>
 
-                <div class="nav-main__menu--link">
-                    <a href="" class="nav-main__main--link">Партнерам</a>
+                <div class="nav-main menu-link">
+                    <a href="" class="nav-main main-link">Партнерам</a>
                 </div>
 
-                <div class="nav-main__menu--link">
-                    <a href="" class="nav-main__main--link">
+                <div class="nav-main menu-link">
+                    <a href="" class="nav-main main-link">
                         База знаний
                         <svg class="mav-main__link--vector vector-two" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L5 5L9 1" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/>
@@ -152,10 +157,10 @@
                 </div>
             </div>
 
-            <div class="nav-main__login">
-                <div class="nav-main__login--link">
+            <div class="nav-main login">
+                <div class="nav-main login-link">
                     <a href="" class="nav-main__login--link">
-                        <svg class="nav-main__login--ico" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="login--ico" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.25 2.25H14.25C14.6478 2.25 15.0294 2.40804 15.3107 2.68934C15.592 2.97064 15.75 3.35218 15.75 3.75V14.25C15.75    14.6478 15.592 15.0294 15.3107 15.3107C15.0294 15.592 14.6478 15.75 14.25 15.75H11.25" stroke="#F76201" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M7.5 12.75L11.25 9L7.5 5.25" stroke="#F76201" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M11.25 9H2.25" stroke="#F76201" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -173,8 +178,8 @@
             </div>
         </nav>
     </div>
-
 </header>
+
 
 
 <div class="container container-article">
@@ -200,17 +205,19 @@
             </div>
 
             <div class="article__button--block">
-                <a href="" class="article__button-link">
-                    <div class="article__button--try--free">
+                <a href="" class="article__button">
+                    <div class="article__button try--free">
                         Попробовать 14 дней бесплатно
                     </div>
                 </a>
 
-                <a href="" class="article__button-help">
-                    Получить консультацию
-                    <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.75 9.5L5.75 5.5L1.75 1.5" stroke="#F76201" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <a href="" class="article__button">
+                    <div class="article__button help">
+                        Получить консультацию
+                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.75 9.5L5.75 5.5L1.75 1.5" stroke="#F76201" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                 </a>
             </div>
         </div>
@@ -229,9 +236,244 @@
     </div>
 
     <div class="comparison__table--box">
-        <table>
-            
-        </table>
+        <div class="comparison__table--variable">
+            Сопоставление стоимости, функционала
+            и сервисных услуг, предлагаемых компанией Scloud в рамках тарифа           "Лайт" с  коробочной версией 1С
+        </div>
+
+        <div class="comparison__table cloud-version">
+            <div class="comparison__table cloud-version-box">
+                <div class="comparison version__img-box">
+                    <img src="style/blocks/comparison/comparison__img/img.png" alt="" class="cloud-version__img">
+                </div>
+
+                <div class="comparison cloud-version__text">
+                    Облачная
+                    версия 1С
+                </div>
+            </div>
+        </div>
+
+        <div class="comparison__table box-version">
+            <div class="comparison__table cloud-version-box">
+                <div class="comparison version__img-box">
+                    <img src="style/blocks/comparison/comparison__img/img_1.png" alt="" class="cloud-version__img">
+                </div>
+
+                <div class="comparison cloud-version__text">
+                    Коробочная
+                    версия 1С
+                </div>
+            </div>
+        </div>
+
+        <div class="comparison__table--grid">
+            <div class="comparison__table table-row">
+                <div class="comparison__table variable-column">Доступ в 1С</div>
+                <div class="comparison__table cloud-column">удаленный</div>
+                <div class="comparison__table desktop-column">с рабочего ПК</div>
+            </div>
+
+            <div class="comparison__table table-row">
+                <div class="comparison__table variable-column">Мгновенное добавления пользователя</div>
+                <div class="comparison__table cloud-column">
+                    <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 2L7 13L2 8" stroke="#178A00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </div>
+                <div class="comparison__table desktop-column">
+                    <svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2H21" stroke="#F76201" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </div>
+            </div>
+
+            <div class="comparison__table table-row">
+                <div class="comparison__table variable-column">Количество конфигураций</div>
+                <div class="comparison__table cloud-column">от 0 конфигураций</div>
+                <div class="comparison__table desktop-column">1 конфигурация</div>
+            </div>
+
+            <div class="comparison__table table-row">
+                <div class="comparison__table variable-column">Техническая поддержка</div>
+                <div class="comparison__table cloud-column">бесплатно 24/7</div>
+                <div class="comparison__table desktop-column">от 30 000 ₽/мес</div>
+            </div>
+
+            <div class="comparison__table table-row">
+                <div class="comparison__table variable-column">Автоматические обновления 1С</div>
+                <div class="comparison__table cloud-column"><svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2L7 13L2 8" stroke="#178A00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </div>
+                <div class="comparison__table desktop-column"><svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2H21" stroke="#F76201" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </div>
+            </div>
+
+            <div class="comparison__table table-row">
+                <div class="comparison__table variable-column">Консультации 1С</div>
+                <div class="comparison__table cloud-column">бесплатно</div>
+                <div class="comparison__table desktop-column">от 2 000 ₽/час</div>
+            </div>
+
+            <div class="comparison__table table-row">
+                <div class="comparison__table variable-column">Финансовые гарантии доступности сервиса</div>
+                <div class="comparison__table cloud-column"><svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2L7 13L2 8" stroke="#178A00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </div>
+                <div class="comparison__table desktop-column"><svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2H21" stroke="#F76201" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </div>
+            </div>
+
+            <div class="comparison__table table-row">
+                <div class="comparison__table variable-column">Договор ИТС</div>
+                <div class="comparison__table cloud-column">не требуется</div>
+                <div class="comparison__table desktop-column">от 1 880 ₽/мес </div>
+            </div>
+
+            <div class="comparison__table table-row">
+                <div class="comparison__table variable-column">Ежедневное резервное копирование</div>
+                <div class="comparison__table cloud-column"><svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2L7 13L2 8" stroke="#178A00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </div>
+                <div class="comparison__table desktop-column"><svg width="23" height="4" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2H21" stroke="#F76201" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </div>
+            </div>
+
+            <div class="comparison__table table-row">
+                <div class="comparison__table variable-column">Стоимость</div>
+                <div class="comparison__table cloud-column">от 760 ₽/мес</div>
+                <div class="comparison__table desktop-column">от 35 381 ₽/мес</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container try-free__container">
+    <h2 class="try--free__title">
+        Попробовать 1С в облаке
+    </h2>
+
+    <form action="index.html">
+        <div class="try--free__form">
+            <div class="try--free__form inputs">
+                <input type="text" placeholder="Имя*" class="try--free__form input">
+                <input type="text" placeholder="RU* +7" class="try--free__form input">
+                <input type="text" placeholder="E-mail*" class="try--free__form input">
+            </div>
+
+            <div class="try--free__from lower-text">
+                * Поля обязательные для заполнения
+            </div>
+        </div>
+
+        <div class="try--free__form buttons-block">
+            <a href="" class="article__button">
+                <div class="article__button try--free">
+                    Попробовать 14 дней бесплатно
+                </div>
+            </a>
+
+            <div class="try--free__form oferta">
+                При регистрации вы принимаете условия
+                <a href="" class="try--free__form oferta-link">оферты</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container safety-box">
+    <h2 class="safety-box__title">
+        Безопасность и надежность нашего сервиса
+    </h2>
+
+    <div class="safety-box__content">
+        <div class="safety-box__image">
+            <img src="style/blocks/safety-box/safety-box/img.png" alt="" class="safety-box__image image">
+        </div>
+
+        <div class="safety-box__content list">
+            <div class="safety-box__content list-item">
+                <svg class="safety-box__content icon" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2L7 13L2 8" stroke="#F76201" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Cерверы расположены в надежном дата-центре
+                в Москве, который имеет сертификат соответствия уровню
+                безопасности TIER III.
+            </div>
+
+            <div class="safety-box__content list-item">
+                <svg class="safety-box__content icon" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2L7 13L2 8" stroke="#F76201" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                SSL - сертификат подтверждает подлинность сайта и шифрует
+                передачу данных и обеспечивает их сохранность.
+            </div>
+
+            <div class="safety-box__content list-item">
+                <svg class="safety-box__content icon" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 2L7 13L2 8" stroke="#F76201" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                15 дней в подарок, eсли сервис недоступен от 2 часов
+                и 30 дней в подарок, eсли сервис недоступен от 4 часов.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container tariffs-box">
+    <h2 class="tariffs-title">
+        Тарифы Scloud
+    </h2>
+
+    <div class="tariffs-box__period selector">
+        <a href="" class="tariffs-box button">
+            <div class="tariffs-box button-text">
+                12 месяцев
+            </div>
+
+            <div class="tariffs-box button-discount">
+                20%
+            </div>
+        </a>
+
+        <a href="" class="tariffs-box button">
+            <div class="tariffs-box button-text">
+                6 месяцев
+            </div>
+
+            <div class="tariffs-box button-discount">
+                10%
+            </div>
+        </a>
+
+        <a href="" class="tariffs-box button">
+            <div class="tariffs-box button-text">
+                3 месяцев
+            </div>
+
+            <div class="tariffs-box button-discount">
+                5%
+            </div>
+        </a>
+
+        <a href="" class="tariffs-box button">
+            <div class="tariffs-box button-text">
+                1 месяц
+            </div>
+        </a>
     </div>
 </div>
 
