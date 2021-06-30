@@ -16,12 +16,13 @@
 }
 
 .safety-box__image {
-    width: 425px;
+    width: 825px;
     margin-right: 185px;
 }
 
 .image {
-
+    max-width: 100%;
+    margin: auto;
 }
 
 .icon {
