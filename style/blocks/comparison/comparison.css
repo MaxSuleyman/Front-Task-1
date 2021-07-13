@@ -51,11 +51,10 @@
     margin-bottom: 20px;
 }
 
-.column-cloud {
+.column-green {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     border-radius: 8px 8px 10px 10px;
     border-top: 8px solid #178A00;
-
 }
 
 .cloud-head-cell {
@@ -104,7 +103,7 @@
     text-decoration-line: underline;
 }
 
-.column-desktop {
+.column-orange {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     border-radius: 8px 8px 10px 10px;
     border-top: 8px solid #F76201;
